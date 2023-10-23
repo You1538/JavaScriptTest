@@ -6,7 +6,7 @@ const arObjectInfo = [
         model: "assets/shibatajo.glb",
         rotation: "0 0 0",
         scale: "1 1 1",
-        animation: "",
+        animation: "property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;",
         latitude: 37.95493534310519,
         longitude: 139.32597092399263
     },
@@ -14,10 +14,10 @@ const arObjectInfo = [
     {
         name: "職短芝生",
         category: "観光",
-        model: "assets/shibatajo.glb",
+        model: "assets/sakura.glb",
         rotation: "0 0 0",
         scale: "1 1 1",
-        animation: "",
+        animation: "property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;",
         latitude: 37.95623964531757,
         longitude: 139.3371717973987
     },
@@ -25,10 +25,10 @@ const arObjectInfo = [
     {
         name: "職短教室",
         category: "観光",
-        model: "assets/shibatajo.glb",
+        model: "assets/kingyodaiwa.glb",
         rotation: "0 0 0",
         scale: "1 1 1",
-        animation: "",
+        animation: "property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;",
         latitude: 37.956133508683955,
         longitude: 139.3378179331434
     },
