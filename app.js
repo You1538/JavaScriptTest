@@ -47,12 +47,14 @@ arObjectInfo.forEach(objectInfo => {
     arObject.setAttribute("gps-entity-place", `latitude:${objectInfo.latitude};longitude:${objectInfo.longitude}`);
 
     // データを表示するHTML要素に追加
+    /*
     const dataElement = document.createElement("div");
     dataElement.textContent = `
         <a-entity gltf-model="${objectInfo.model}" rotation="${objectInfo.rotation}" scale="${objectInfo.scale}" animation="${objectInfo.animation}" gps-entity-place="latitude:${objectInfo.latitude};longitude:${objectInfo.longitude}">
         </a-entity>`;
     arContainer.appendChild(dataElement);
-
+    */
     // ARコンテナに3Dオブジェクトを追加
-    //arContainer.appendChild(arObject);
+    arContainer.appendChild(arObject);
+    
 });
