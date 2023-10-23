@@ -54,5 +54,5 @@ arObjectInfo.forEach(objectInfo => {
     arContainer.appendChild(dataElement);
 
     // ARコンテナに3Dオブジェクトを追加
-    arContainer.appendChild(arObject);
+    //arContainer.appendChild(arObject);
 });
