@@ -3,7 +3,7 @@ const arObjectInfo = [
     {
         name: "新発田城",
         category: "観光",
-        model: "assets/shibatajo.glb",
+        model: "./assets/shibatajo.glb",
         rotation: "0 0 0",
         scale: "1 1 1",
         animation: "",
@@ -14,7 +14,7 @@ const arObjectInfo = [
     {
         name: "職短芝生",
         category: "観光",
-        model: "assets/sakura.glb",
+        model: "./assets/sakura.glb",
         rotation: "0 0 0",
         scale: "1 1 1",
         animation: "",
@@ -25,7 +25,7 @@ const arObjectInfo = [
     {
         name: "職短教室",
         category: "観光",
-        model: "assets/kingyodaiwa.glb",
+        model: "./assets/kingyodaiwa.glb",
         rotation: "0 0 0",
         scale: "1 1 1",
         animation: "",
