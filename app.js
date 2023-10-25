@@ -39,20 +39,10 @@ const arContainer = document.getElementById("ar-container");
 
 // 3Dオブジェクト情報をHTML要素に渡す
 arObjectInfo.forEach(objectInfo => {
-    const arObject = document.createElement("a-entity");
-    arObject.setAttribute("gltf-model", objectInfo.model);
-    arObject.setAttribute("rotation", objectInfo.rotation);
-    arObject.setAttribute("scale", objectInfo.scale);
-    arObject.setAttribute("animation", objectInfo.animation);
-    arObject.setAttribute("gps-entity-place", `latitude:${objectInfo.latitude};longitude:${objectInfo.longitude}`);
-
     // データを表示するHTML要素に追加
     const dataElement = document.createElement("div");
     dataElement.innerHTML = `
         <a-entity gltf-model="${objectInfo.model}" rotation="${objectInfo.rotation}" scale="${objectInfo.scale}" animation="${objectInfo.animation}" gps-entity-place="latitude:${objectInfo.latitude};longitude:${objectInfo.longitude}">
         </a-entity>`;
     arContainer.appendChild(dataElement);
-
-    // ARコンテナに3Dオブジェクトを追加
-    arContainer.appendChild(arObject);
 });
