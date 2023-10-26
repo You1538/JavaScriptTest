@@ -50,4 +50,3 @@ entityData.forEach(data => {
     const aEntity = createAEntity('<a-entity></a-entity>', data);
     result.appendChild(aEntity);
 });
-</script>
