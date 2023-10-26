@@ -35,7 +35,7 @@ const entityData = [
     },
     // 必要に応じてデータを追加
     {
-        "gltf-model": "assets/sakura.gltf",
+        "gltf-model": "assets/kingyodaiwa.gltf",
         "rotation": "0 90 0",
         "scale": "0.5 0.5 0.5",
         "animation": "",
@@ -50,3 +50,4 @@ entityData.forEach(data => {
     const aEntity = createAEntity('<a-entity></a-entity>', data);
     result.appendChild(aEntity);
 });
+</script>
