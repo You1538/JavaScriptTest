@@ -20,14 +20,14 @@ function createAEntity(template, data) {
 // <a-entity> 要素のデータの例
 const entityData = [
     {
-        "gltf-model": "assets/shibatajo.gltf",
+        "gltf-model": "assets/shibatajo.glb",
         "rotation": "0 0 0",
         "scale": "1 1 1",
         "animation": "property: rotation; to: 0 360 0; loop: true; dur: 2000",
         "gps-entity-place": "latitude: 37.95493534310519; longitude: 139.32597092399263"
     },
     {
-        "gltf-model": "assets/sakura.gltf",
+        "gltf-model": "assets/sakura.glb",
         "rotation": "0 90 0",
         "scale": "0.5 0.5 0.5",
         "animation": "property: rotation; to: 0 360 0; loop: true; dur: 2000",
@@ -35,7 +35,7 @@ const entityData = [
     },
     // 必要に応じてデータを追加
     {
-        "gltf-model": "assets/kingyodaiwa.gltf",
+        "gltf-model": "assets/kingyodaiwa.glb",
         "rotation": "0 90 0",
         "scale": "0.5 0.5 0.5",
         "animation": "",
