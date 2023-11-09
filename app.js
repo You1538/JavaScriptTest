@@ -3,7 +3,7 @@
 // 生成する<a-entity>タグの情報をリストで定義
 var entitiesToCreate = [
     {
-      gltfModel: "./assets2/sakura.glb",
+      gltfModel: "./assets/sakura.glb",
       rotation: "0 0 0",
       scale: "2 2 2",
       animation: "",
@@ -11,7 +11,7 @@ var entitiesToCreate = [
       longitude: "139.3371717973987"
     },
     {
-      gltfModel: "./assets2/sakura.glb",
+      gltfModel: "./assets/sakura.glb",
       rotation: "180 180 180",
       scale: "2 2 2",
       animation: "",
