@@ -3,7 +3,7 @@
 // 生成する<a-entity>タグの情報をリストで定義
 var entitiesToCreate = [
     {
-      gltfModel: "./assets/sakura.glb",
+      gltfModel: "./assets2/sakura.glb",
       rotation: "0 0 0",
       scale: "2 2 2",
       animation: "",
@@ -11,10 +11,10 @@ var entitiesToCreate = [
       longitude: "139.3371717973987"
     },
     {
-      gltfModel: "./assets/sakura.glb",
-      rotation: "30 60 90",
+      gltfModel: "./assets2/sakura.glb",
+      rotation: "0 0 180",
       scale: "2 2 2",
-      animation: "",
+      animation: "property: rotation; to: 0 0 540; loop: true; dur: 15000; easing: linear;",
       latitude: "37.95623964531757",
       longitude: "140.123456789"
     },
@@ -27,11 +27,11 @@ var entitiesToCreate = [
   // 各<a-entity>を生成して<div>に追加
   entitiesToCreate.forEach(function(entityInfo) {
     var newEntity = document.createElement("a-entity");
-    newEntity.setAttribute("gltf-model", entityInfo.gltfModel);
-    newEntity.setAttribute("rotation", entityInfo.rotation);
-    newEntity.setAttribute("scale", entityInfo.scale);
-    newEntity.setAttribute("animation", entityInfo.animation);
-    newEntity.setAttribute("gps-entity-place", `latitude: ${entityInfo.latitude}; longitude: ${entityInfo.longitude}`);
+    newEntity.innerHTML = `
+      <a-entity gltf-model="${entityInfo.gltfModel}" rotation="${entityInfo.rotation}" scale="${entityInfo.scale}" animation="${entityInfo.animation}" gps-entity-place="latitude: ${entityInfo.latitude}; longitude: ${entityInfo.longitude}">
+          <!-- ここに内部のHTMLコンテンツを追加 -->
+      </a-entity>
+    `;
     resultContainer.appendChild(newEntity);
   });
   
