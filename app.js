@@ -1,7 +1,7 @@
 // スクリプトで<a-entity>要素を生成
 var entitiesToCreate = [
   {
-    gltfModel: "./assets2/sakura.glb",
+    gltfModel: "./assets/sakura.glb",
     rotation: "0 0 0",
     scale: "2 2 2",
     animation: "",
@@ -9,7 +9,7 @@ var entitiesToCreate = [
     longitude: "139.3371717973987"
   },
   {
-    gltfModel: "./assets2/sakura.glb",
+    gltfModel: "./assets/sakura.glb",
     rotation: "0 0 180",
     scale: "2 2 2",
     animation: "property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;",
