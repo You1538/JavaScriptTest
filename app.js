@@ -10,7 +10,7 @@ var entitiesToCreate = [
   },
   {
     gltfModel: "./assets2/sakura.glb",
-    rotation: "180 180 180",
+    rotation: "0 0 180",
     scale: "2 2 2",
     animation: "property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;",
     latitude: "37.95623964531757",
