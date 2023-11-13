@@ -1,37 +1,52 @@
+// タグの要素を管理する構造体的なオブジェクト
+function AEntityData(fileLocation, rotation, scale, animation, latitude, longitude) {
+  this.fileLocation = fileLocation;
+  this.rotation = rotation;
+  this.scale = scale;
+  this.animation = animation;
+  this.latitude = latitude;
+  this.longitude = longitude;
+}
+
 // タグを生成する関数
-function createAEntity(fileLocation, rotation, scale, animation, latitude, longitude) {
+function createAEntity(data) {
   // <a-entity> 要素を作成
   var aEntity = document.createElement('a-entity');
-  
+
   // 属性を設定
-  aEntity.setAttribute('gltf-model', fileLocation);
-  aEntity.setAttribute('rotation', rotation);
-  aEntity.setAttribute('scale', scale);
-  aEntity.setAttribute('animation', animation);
-  aEntity.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`);
+  aEntity.setAttribute('gltf-model', data.fileLocation);
+  aEntity.setAttribute('rotation', data.rotation);
+  aEntity.setAttribute('scale', data.scale);
+  aEntity.setAttribute('animation', data.animation);
+  aEntity.setAttribute('gps-entity-place', `latitude: ${data.latitude}; longitude: ${data.longitude}`);
 
   return aEntity;
 }
 
-// <a-scene> 要素を取得
-var scene = document.querySelector('a-scene');
+// 親要素を取得
+const parentElement = document.getElementById("scene");
 
-// タグを生成して挿入
-var entity1 = createAEntity(
-   './assets/sakura.glb',
-   '0 0 0',
-   '2 2 2',
-   '',
-   '37.95623964531757',
-   '140.123456789');
-var entity2 = createAEntity(
+// タグの要素を管理するオブジェクトの配列
+var entitiesData = [
+  new AEntityData(
+    './assets/sakura.glb',
+     '0 0 0',
+     '2 2 2',
+     'property: rotation; to: 0 360 0; loop: true; dur: 5000; easing: linear;',
+     '37.95623964531757',
+     '140.123456789'),
+
+  new AEntityData(
   './assets/sakura.glb',
-  '0 0 0',
+  '0 0 180',
   '2 2 2',
-  'property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;',
+  '',
   '37.95623964531757',
-  '140.123456789');
+  '140.123456789')
+];
 
-// 生成したタグを <a-scene> に追加
-scene.appendChild(entity1);
-scene.appendChild(entity2);
+// タグを生成して追加
+entitiesData.forEach(function(data) {
+  var entity = createAEntity(data);
+  parentElement.appendChild(entity);
+});
