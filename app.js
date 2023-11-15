@@ -1,4 +1,4 @@
-document.getElementById('a-frame').insertAdjacentHTML('beforeend', `
+document.getElementById('scene').insertAdjacentHTML('beforeend', `
         <a-camera gps-camera="minDistance:5; maxDistance:100"></a-camera> 
 
         <!--0 職短 -->
