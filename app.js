@@ -1,4 +1,6 @@
-document.getElementById('scene').insertAdjacentHTML('beforeend', `
+document.getElementById('a-frame').insertAdjacentHTML('beforeend', `
+        <a-camera gps-camera="minDistance:5; maxDistance:100"></a-camera> 
+
         <!--0 職短 -->
         <a-entity gltf-model="./assets/sakura.glb" rotation="0 0 0" scale="2 2 2"
             animation="property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;"
