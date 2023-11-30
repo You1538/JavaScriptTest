@@ -66,6 +66,14 @@
             "longitude": "139.32938184552992"
         },
         {
+            "model": "assets/gomaman.glb",
+            "rotation": "0 0 0",
+            "scale": "2 2 2",
+            "animation": "property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;",
+            "latitude": "37.94704540189163",
+            "longitude": "139.32939304628667"
+        },
+        {
             "model": "assets/melonsoda.glb",
             "rotation": "0 0 0",
             "scale": "1 1 1",
