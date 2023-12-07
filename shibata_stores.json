@@ -1,7 +1,8 @@
 {
-    "caption":"SHIBATA_street",
-    "members":[
+    "caption": "SHIBATA_street",
+    "members": [
         {
+            "num": "1",
             "model": "assets/sakura.glb",
             "rotation": "0 0 0",
             "scale": "2 2 2",
@@ -10,6 +11,7 @@
             "longitude": "139.3371717973987"
         },
         {
+            "num": "2",
             "model": "assets/text.glb",
             "rotation": "0 0 0",
             "scale": "2 2 2",
@@ -18,6 +20,7 @@
             "longitude": "139.32706387291938"
         },
         {
+            "num": "3",
             "model": "assets/shibatajo.glb",
             "rotation": "0 0 0",
             "scale": "1 1 1",
@@ -26,6 +29,7 @@
             "longitude": "139.32597092399263"
         },
         {
+            "num": "4",
             "model": "assets/hukiyakouji.glb",
             "rotation": "0 0 0",
             "scale": "0.5 0.5 0.5",
@@ -34,6 +38,7 @@
             "longitude": "139.32727454199866"
         },
         {
+            "num": "5",
             "model": "assets/.glb",
             "rotation": "0 0 0",
             "scale": "2 2 2",
@@ -42,6 +47,7 @@
             "longitude": "139.30914421468543"
         },
         {
+            "num": "6",
             "model": "assets/kare.glb",
             "rotation": "-25 0 0",
             "scale": "4 4 4",
@@ -50,6 +56,7 @@
             "longitude": "139.3289264927443"
         },
         {
+            "num": "7",
             "model": "assets/megane.glb",
             "rotation": "0 0 0",
             "scale": "2 2 2",
@@ -58,6 +65,7 @@
             "longitude": "139.3249651375072"
         },
         {
+            "num": "8",
             "model": "assets/mitarashi.glb",
             "rotation": "0 0 0",
             "scale": "2 2 2",
@@ -66,6 +74,7 @@
             "longitude": "139.32938184552992"
         },
         {
+            "num": "9",
             "model": "assets/gomaman.glb",
             "rotation": "0 0 0",
             "scale": "2 2 2",
@@ -74,6 +83,7 @@
             "longitude": "139.32939304628667"
         },
         {
+            "num": "10",
             "model": "assets/melonsoda.glb",
             "rotation": "0 0 0",
             "scale": "1 1 1",
@@ -82,6 +92,7 @@
             "longitude": "139.3304161471393"
         },
         {
+            "num": "11",
             "model": "assets/kuruma.glb",
             "rotation": "0 0 0",
             "scale": "2 2 2",
@@ -90,6 +101,7 @@
             "longitude": "139.3263289383618"
         },
         {
+            "num": "12",
             "model": "assets/kinunoyuugetsu.glb",
             "rotation": "0 0 0",
             "scale": "2 2 2",
@@ -98,6 +110,7 @@
             "longitude": "139.3243181903153"
         },
         {
+            "num": "13",
             "model": "assets/pan.glb",
             "rotation": "-20 0 0",
             "scale": "1 1 1",
@@ -106,6 +119,7 @@
             "longitude": "139.32398490982246"
         },
         {
+            "num": "14",
             "model": "assets/cafelatte.glb",
             "rotation": "0 0 0",
             "scale": "1 1 1",
@@ -114,6 +128,7 @@
             "longitude": "139.32820394864558"
         },
         {
+            "num": "15",
             "model": "assets/kurimusoda.glb",
             "rotation": "0 0 0",
             "scale": "1 1 1",
@@ -122,6 +137,7 @@
             "longitude": "139.3243090612117"
         },
         {
+            "num": "16",
             "model": "assets/ayame.glb",
             "rotation": "0 0 0",
             "scale": "2 2 2",
@@ -130,6 +146,7 @@
             "longitude": "139.36088524817083"
         },
         {
+            "num": "17",
             "model": "assets/tenisuraketto.glb",
             "rotation": "30 0 0",
             "scale": "2 2 2",
@@ -138,6 +155,7 @@
             "longitude": "139.3557529684019"
         },
         {
+            "num": "18",
             "model": "assets/tenisuboru.glb",
             "rotation": "0 0 0",
             "scale": "1 1 1",
@@ -146,6 +164,7 @@
             "longitude": "139.3557529684019"
         },
         {
+            "num": "19",
             "model": "assets/yakyuuboru.glb",
             "rotation": "0 0 90",
             "scale": "1 1 1",
@@ -154,6 +173,7 @@
             "longitude": "139.3557529684019"
         },
         {
+            "num": "20",
             "model": "assets/yakyuubatto.glb",
             "rotation": "30 0 0",
             "scale": "0.5 0.5 0.5",
@@ -162,6 +182,7 @@
             "longitude": "139.3557529684019"
         },
         {
+            "num": "21",
             "model": "assets/bareboru.glb",
             "rotation": "0 0 0",
             "scale": "1.5 1.5 1.5",
@@ -170,6 +191,7 @@
             "longitude": "139.3557529684019"
         },
         {
+            "num": "22",
             "model": "assets/onsen.glb",
             "position": "0 55 0",
             "rotation": "0 0 0",
@@ -179,6 +201,7 @@
             "longitude": "139.31095811420894"
         },
         {
+            "num": "23",
             "model": "assets/tsukiokamanju.glb",
             "rotation": "0 0 0",
             "scale": "2 2 2",
@@ -187,6 +210,7 @@
             "longitude": "139.31095811420894"
         },
         {
+            "num": "24",
             "model": "assets/katoriku.glb",
             "rotation": "0 0 0",
             "scale": "0.3 0.3 0.3",
@@ -195,6 +219,7 @@
             "longitude": "139.3286530981394"
         },
         {
+            "num": "25",
             "model": "assets/ashigaru.glb",
             "rotation": "0 0 0",
             "scale": "0.2 0.2 0.2",
@@ -202,6 +227,7 @@
             "longitude": "139.32894797266616"
         },
         {
+            "num": "26",
             "model": "assets/sushiglb",
             "rotation": "0 0 0",
             "scale": "2 2 2",
@@ -210,6 +236,7 @@
             "longitude": "139.3245144982879"
         },
         {
+            "num": "27",
             "model": "assets/kingyodaiwa.glb",
             "rotation": "0 0 0",
             "scale": "1 1 1",
@@ -218,5 +245,4 @@
             "longitude": "139.337817933143"
         }
     ]
-    
 }
