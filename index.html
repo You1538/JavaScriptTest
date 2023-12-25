@@ -21,12 +21,19 @@
      <a-entity light="color: #BBB; type: ambient; intensity: 1.5" data-aframe-default-light="" aframe-injected=""></a-entity>
      <a-entity light="intensity: 1.2; castShadow: true" position="-0.5 1 1" data-aframe-default-light="" aframe-injected=""></a-entity>                
 
+     <a-assets>
+        <!-- 3Dモデルを読み込む -->
+        <a-asset-item id="daiwa" src="./assets/kingyodaiwa.glb" scale="1 1 1"></a-asset-item>
+        <a-asset-item id="shibatajo" src="./assets/shibatajo.glb" scale="1 1 1"></a-asset-item>
+      </a-assets>
+
+
      
       <!-- マーカーを設定する -->
       <a-marker type="pattern" url="./marker/castle.patt">
         <!-- 3Dモデルを呼び出す -->
         <a-entity
-        gltf-model="./assets/shibatajo.glb"
+        gltf-model="#shibatajo"
         rotation="0 0 0"
         scale="0.1 0.1 0.1"
         animation="property: rotation; to: 0 360 0; loop: true; dur: 7500; easing: linear;"
@@ -37,12 +44,25 @@
       <a-marker type="pattern" url="./marker/kingyo.patt">
         <!-- 3Dモデルを呼び出す -->
         <a-entity
-        gltf-model="./assets/kingyodaiwa.glb"
+        gltf-model="#daiwa"
         rotation="0 0 0"
         scale="0.3 0.3 0.3"
         animation=""
         ></a-entity>
       </a-marker>
+
+
+    <!-- glTFの表示が暗くなる問題に対処 -->
+      document.querySelector("a-scene").renderer.gammaOutput=true;
+    </script>
+    <!-- チラつきを抑える -->
+    <script>
+    const sceneEl = document.querySelector('a-scene');
+    sceneEl.addEventListener('loaded', () => {
+        sceneEl.camera = new THREE.PerspectiveCamera();
+    });
+     </script>
+
      
     </a-scene>
 <script src="main.js"></script>
