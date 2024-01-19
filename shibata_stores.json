@@ -283,13 +283,13 @@
       },
       {
         "num": "29",
-        "場所": "",
-        "model": "assets/.glb",
+        "場所": "ウオロク中央店",
+        "model": "assets/uoroku.glb",
         "rotation": "0 0 0",
         "scale": "1 1 1",
         "animation": "",
-        "latitude": "",
-        "longitude": ""
+        "latitude": "37.94842975544853",
+        "longitude": "139.3247415737397"
       },
       {
         "num": "30",
