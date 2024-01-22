@@ -114,7 +114,7 @@
       {
         "num": "12",
         "場所": "翁屋",
-        "model": "assets/kinunoyuugetsu.glb",
+        "model": "assets/kinunoyuuduki.glb",
         "rotation": "0 0 0",
         "scale": "2 2 2",
         "animation": "property: rotation; to: 0 360 0; loop: true; dur: 15000; easing: linear;",
